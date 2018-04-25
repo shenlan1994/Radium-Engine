@@ -23,10 +23,10 @@ namespace AnimationPlugin
         void handleAssetLoading( Ra::Engine::Entity* entity, const Ra::Asset::FileData* fileData) override;
 
         /// Toggle on/off playing of animations.
-        void setPlaying( bool isPlaying );
+        void play( bool isPlaying ) override;
 
         /// Advance the animation next frame, then pauses.
-        void step();
+        void step() override;
 
         /// Resets the skeleton to its rest pose.
         void reset();
@@ -44,9 +44,13 @@ namespace AnimationPlugin
 
         Scalar getTime(const Ra::Engine::ItemEntry& entry) const;
 
+        bool isPlaying() const { return m_isPlaying; }
+        bool isStepping() const { return m_isStepping; }
+
     private:
         bool m_isPlaying; /// See if animation is playing or paused
         bool m_oneStep;   /// True if one step has been required to play.
+        bool m_isStepping; /// True if one step has been required to play.
         bool m_xrayOn;    /// True if we want to show xray-bones
     };
 }

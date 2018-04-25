@@ -37,6 +37,7 @@ namespace AnimationPlugin
             taskQueue->registerTask( task );
         }
 
+        m_isStepping = m_oneStep;
         m_oneStep = false;
     }
 
@@ -70,7 +71,7 @@ namespace AnimationPlugin
         m_oneStep = true;
     }
 
-    void AnimationSystem::setPlaying( bool isPlaying )
+    void AnimationSystem::play( bool isPlaying )
     {
         m_isPlaying = isPlaying;
     }

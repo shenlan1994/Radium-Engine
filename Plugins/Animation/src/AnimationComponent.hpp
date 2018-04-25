@@ -49,6 +49,7 @@ namespace AnimationPlugin
 
         uint getBoneIdx(Ra::Core::Index index) const ;
         Scalar getTime() const;
+        Scalar getDuration() const;
 
 
         void handleSkeletonLoading(const Ra::Asset::HandleData* data,
@@ -65,6 +66,9 @@ namespace AnimationPlugin
         virtual Ra::Core::Transform getTransform(Ra::Core::Index roIdx) const override;
 
         virtual void setTransform(Ra::Core::Index roIdx, const Ra::Core::Transform& transform) override;
+
+        void saveFrame( int frame ) const;
+        bool loadFrame( int frame );
 
     public:
         // debug function to display the hierarchy

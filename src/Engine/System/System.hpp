@@ -60,7 +60,6 @@ namespace Ra
              */
             virtual void generateTasks( Core::TaskQueue* taskQueue, const Engine::FrameInfo& frameInfo ) = 0;
 
-
             /// Registers a component belonging to an entity, making it active within the system.
             void registerComponent( const Entity* entity, Component* component );
 
@@ -80,9 +79,18 @@ namespace Ra
              */
             virtual void handleAssetLoading( Entity* entity, const Asset::FileData* data) {}
 
+            /// Enables/disables the system
+            virtual void play(bool on) {}
+
+            /// Makes the system run for one frame only
+            virtual void step() {}
+
+            inline uint getFrameRate() const { return uint(1.f / m_dt); }
+
         protected:
             /// List of active components.
             std::vector< std::pair<const Entity*, Component*> > m_components;
+            Scalar m_dt;
         };
 
     } // namespace Engine
