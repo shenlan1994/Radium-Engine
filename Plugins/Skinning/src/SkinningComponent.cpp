@@ -167,7 +167,6 @@ void SkinningComponent::skin() {
             case DQS:
             {
                 Ra::Core::AlignedStdVector<DualQuaternion> DQ;
-                // computeDQ( m_frameData.m_prevToCurrentRelPose, m_refData.m_weights, DQ );
                 Ra::Core::Animation::computeDQ( m_frameData.m_refToCurrentRelPose,
                                                 m_refData.m_weights, DQ );
                 Ra::Core::Animation::dualQuaternionSkinning( m_refData.m_referenceMesh.vertices(),
@@ -281,7 +280,6 @@ void SkinningComponent::endSkinning() {
         std::swap( m_frameData.m_previousPos, m_frameData.m_currentPos );
 
         m_frameData.m_doSkinning = false;
-
     } else if ( m_frameData.m_doReset )
     {
         auto mesh = m_refData.m_referenceMesh;
@@ -362,12 +360,6 @@ void SkinningComponent::setupSkinningType( SkinningType type ) {
         if ( m_refData.m_CoR.empty() )
         {
             Ra::Core::Animation::computeCoR( m_refData );
-            /*
-                       for ( const auto& v :m_refData.m_CoR )
-                       {
-                           RA_DISPLAY_POINT( v, Ra::Core::Colors::Red(), 0.1f );
-                       }
-            */
         }
     }
     } // end of switch.

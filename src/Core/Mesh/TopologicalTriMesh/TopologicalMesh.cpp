@@ -19,7 +19,7 @@ template <typename T>
 void addAttribPairToTopo( const TriangleMesh& triMesh, TopologicalMesh* topoMesh,
                           AttribManager::value_type attr, std::vector<PropPair<T>>& vprop,
                           std::vector<OpenMesh::HPropHandleT<T>>& pph ) {
-    AttribHandle<T> h = triMesh.attribManager().getAttribHandle<T>( attr->getName() );
+    AttribHandle<T> h = triMesh.getAttribHandle<T>( attr->getName() );
     OpenMesh::HPropHandleT<T> oh;
     topoMesh->add_property( oh, attr->getName() );
     vprop.push_back( std::make_pair( h, oh ) );
@@ -29,7 +29,7 @@ void addAttribPairToTopo( const TriangleMesh& triMesh, TopologicalMesh* topoMesh
 template <typename T>
 void addAttribPairToCore( TriangleMesh& triMesh, TopologicalMesh* topoMesh,
                           OpenMesh::HPropHandleT<T> oh, std::vector<PropPair<T>>& vprop ) {
-    AttribHandle<T> h{triMesh.attribManager().addAttrib<T>( topoMesh->property( oh ).name() )};
+    AttribHandle<T> h{triMesh.addAttrib<T>( topoMesh->property( oh ).name() )};
     vprop.push_back( std::make_pair( h, oh ) );
 }
 
@@ -39,8 +39,7 @@ void copyAttribToTopo( const TriangleMesh& triMesh, TopologicalMesh* topoMesh,
                        unsigned int vindex ) {
     for ( auto pp : vprop )
     {
-        topoMesh->property( pp.second, heh ) =
-            triMesh.attribManager().getAttrib( pp.first ).data()[vindex];
+        topoMesh->property( pp.second, heh ) = triMesh.getAttrib( pp.first ).data()[vindex];
     }
 }
 
@@ -62,7 +61,7 @@ template <typename T>
 void copyAttribToCore( TriangleMesh& triMesh, HandleAndValueVector<T>& data ) {
     for ( auto pp : data )
     {
-        triMesh.attribManager().getAttrib( pp.first ).data().push_back( pp.second );
+        triMesh.getAttrib( pp.first ).data().push_back( pp.second );
     }
 }
 
@@ -266,6 +265,7 @@ TriangleMesh TopologicalMesh::toTriangleMesh() {
                  "Inconsistent number of faces in generated TriangleMesh." );
 
     return out;
-} // namespace Core
+}
+
 } // namespace Core
 } // namespace Ra
