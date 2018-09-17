@@ -64,7 +64,7 @@ void splitEdge( Dcel& dcel, Index edgeIndex, Scalar fraction ) {
 
     // Half edge joining M to A (on side of F0)
     HalfEdge_ptr heA0( new HalfEdge );
-    // Half edge joining M to A (on side of F1)
+    // Half edge joining M to A (on side of F2)
     HalfEdge_ptr heA2( new HalfEdge );
     // Full edge MA
     FullEdge_ptr feA( new FullEdge( heA0 ) );
@@ -102,18 +102,32 @@ void splitEdge( Dcel& dcel, Index edgeIndex, Scalar fraction ) {
 
     he2->idx = dcel.m_halfedge.insert( he2 );
     he3->idx = dcel.m_halfedge.insert( he3 );
+    heA0->idx = dcel.m_halfedge.insert( heA0 );
+    heA2->idx = dcel.m_halfedge.insert( heA2 );
+    heB1->idx = dcel.m_halfedge.insert( heB1 );
+    heB3->idx = dcel.m_halfedge.insert( heB3 );
 
     fe1->idx = dcel.m_fulledge.insert( fe1 );
+    feA->idx = dcel.m_fulledge.insert( feA );
+    feB->idx = dcel.m_fulledge.insert( feB );
 
     f2->idx = dcel.m_face.insert( f2 );
     f3->idx = dcel.m_face.insert( f3 );
 
     // Fixup all pointers.
+    vm->setHE( he1 );
+    if ( v2->HE() == he1 )
+    {
+        v2->setHE( he3 );
+    }
 
     he0->setNext( heA0 );
     he1->setPrev( heB1 );
     he1->setV( vm );
 
+    V2A->setPrev( he2 );
+    V2A->setNext( heA2 );
+    V2A->setF( f2 );
     he2->setV( vm );
     he3->setV( v2 ); // must be set before setTwin()
     he2->setNext( V2A );
@@ -122,12 +136,16 @@ void splitEdge( Dcel& dcel, Index edgeIndex, Scalar fraction ) {
     he2->setFE( fe1 );
     he2->setF( f2 );
 
+    BV2->setPrev( heB3 );
+    BV2->setNext( he3 );
+    BV2->setF( f3 );
     he3->setNext( heB3 );
     he3->setPrev( BV2 );
     he3->setTwin( he2 );
     he3->setFE( fe1 );
-    he3->setF( f1 );
+    he3->setF( f3 );
 
+    AV1->setPrev( heA0 );
     heA0->setV( vm );
     heA2->setV( A ); // must be set before setTwin()
     heA0->setNext( AV1 );
@@ -142,6 +160,7 @@ void splitEdge( Dcel& dcel, Index edgeIndex, Scalar fraction ) {
     heA2->setFE( feA );
     heA2->setF( f2 );
 
+    V1B->setNext( heB1 );
     heB1->setV( B );
     heB3->setV( vm ); // must be set before setTwin()
     heB1->setNext( he1 );

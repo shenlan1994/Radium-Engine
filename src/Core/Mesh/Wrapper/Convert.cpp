@@ -62,6 +62,7 @@ void convert( const TriangleMesh& mesh, Dcel& dcel ) {
         Face_ptr f = Ra::Core::make_shared<Face>( he[0] );
         CORE_ASSERT( ( f != nullptr ), "Face_ptr == nullptr" );
         f->idx = dcel.m_face.insert( f );
+        f->HE() = he[0];
         CORE_ASSERT( f->idx.isValid(), "Face not inserted" );
 
         // Create the connections
@@ -98,6 +99,7 @@ void convert( const TriangleMesh& mesh, Dcel& dcel ) {
                 CORE_ASSERT( ( fe != nullptr ), "FullEdge_ptr == nullptr" );
 
                 fe->idx = dcel.m_fulledge.insert( fe );
+                fe->setHE( he[i] );
                 CORE_ASSERT( fe->idx.isValid(), "FullEdge not inserted" );
 
                 he[i]->setFE( fe );
