@@ -1,6 +1,7 @@
 #include <Core/Animation/Skinning/RotationCenterSkinning.hpp>
 
 #include <array>
+#include <unordered_map>
 
 #include <Core/Log/Log.hpp>
 #include <Core/Mesh/MeshUtils.hpp>
