@@ -165,6 +165,9 @@ bool TMOperations::splitEdge( TopologicalMesh& mesh, TopologicalMesh::EdgeHandle
         // deal with custom properties
         // first copy at he3
         copyProps( mesh.m_floatPph, he1, he3, mesh );
+        copyProps( mesh.m_vec2Pph, he1, he3, mesh );
+        copyProps( mesh.m_vec3Pph, he1, he3, mesh );
+        copyProps( mesh.m_vec4Pph, he1, he3, mesh );
         // interpolate at he1
         interpolateProps( mesh.m_floatPph, o0, he3, he1, 0.5, mesh );
         interpolateProps( mesh.m_vec2Pph, o0, he3, he1, 0.5, mesh );
