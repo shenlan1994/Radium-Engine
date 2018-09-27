@@ -3,13 +3,12 @@
 #include <array>
 #include <unordered_map>
 
-#include <Core/Log/Log.hpp>
-#include <Core/Mesh/MeshUtils.hpp>
-
 #include <Core/Animation/Handle/HandleWeight.hpp>
 #include <Core/Animation/Pose/Pose.hpp>
 #include <Core/Animation/Skinning/DualQuaternionSkinning.hpp>
 #include <Core/Animation/Skinning/LinearBlendSkinning.hpp>
+#include <Core/Log/Log.hpp>
+#include <Core/Mesh/MeshUtils.hpp>
 #include <Core/Mesh/TopologicalTriMesh/Operations/EdgeSplit.hpp>
 #include <Core/Mesh/TopologicalTriMesh/TopologicalMesh.hpp>
 

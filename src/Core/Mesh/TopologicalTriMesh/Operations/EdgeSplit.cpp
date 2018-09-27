@@ -1,34 +1,10 @@
 #include <Core/Mesh/TopologicalTriMesh/Operations/EdgeSplit.hpp>
 
+#include <Core/Algorithm/Subdivision/SubdividerUtils.hpp>
 #include <Core/Log/Log.hpp>
 
 namespace Ra {
 namespace Core {
-
-/// Copy \p props properties from \p input_heh to \p copy_heh
-template <typename T>
-void copyProps( const std::vector<OpenMesh::HPropHandleT<T>>& props,
-                const TopologicalMesh::HalfedgeHandle& input_heh,
-                const TopologicalMesh::HalfedgeHandle& copy_heh, TopologicalMesh& mesh ) {
-    for ( const auto& oh : props )
-    {
-        mesh.property( oh, copy_heh ) = mesh.property( oh, input_heh );
-    }
-}
-
-/// Interpolate \p props on edge center (after edge split).
-template <typename T>
-void interpolateProps( const std::vector<OpenMesh::HPropHandleT<T>>& props,
-                       const TopologicalMesh::HalfedgeHandle& in_a,
-                       const TopologicalMesh::HalfedgeHandle& in_b,
-                       const TopologicalMesh::HalfedgeHandle& out, Scalar f,
-                       TopologicalMesh& mesh ) {
-    // interpolate properties
-    for ( const auto& oh : props )
-    {
-        mesh.property( oh, out ) = f * ( mesh.property( oh, in_a ) + mesh.property( oh, in_b ) );
-    }
-}
 
 bool TMOperations::splitEdge( TopologicalMesh& mesh, TopologicalMesh::EdgeHandle eh, Scalar f ) {
     // Global schema of operation

@@ -3,6 +3,9 @@
 
 #include <Core/CoreMacros.hpp>
 
+//#define RELEASE_EIGEN_PLUGIN_PROTECTION_AGAINST_DIRECT_INCLUSION
+//#define EIGEN_MATRIX_PLUGIN "Core/Mesh/TopologicalTriMesh/EigenOpenMeshPlugin.h"
+
 /// Defines the correct macro to export dll symbols.
 #if defined RA_CORE_EXPORTS
 #    define RA_CORE_API DLL_EXPORT

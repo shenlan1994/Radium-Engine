@@ -20,7 +20,7 @@ class RA_CORE_API CatmullClarkSubdivider
   public:
     CatmullClarkSubdivider() : base() {}
 
-    CatmullClarkSubdivider( TopologicalMesh& mesh ) : base( mesh ) {}
+    CatmullClarkSubdivider( TopologicalMesh& mesh ) : base() { attach( mesh ); }
 
     ~CatmullClarkSubdivider() {}
 

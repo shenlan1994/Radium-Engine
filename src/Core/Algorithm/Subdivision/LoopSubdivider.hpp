@@ -22,7 +22,10 @@ class RA_CORE_API LoopSubdivider
   public:
     LoopSubdivider() : base() { init_weights(); }
 
-    LoopSubdivider( TopologicalMesh& mesh ) : base( mesh ) { init_weights(); }
+    LoopSubdivider( TopologicalMesh& mesh ) : base() {
+        init_weights();
+        attach( mesh );
+    }
 
     ~LoopSubdivider() {}
 

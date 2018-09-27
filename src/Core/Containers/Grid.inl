@@ -115,7 +115,7 @@ inline T& Grid<T, D>::at( uint idx ) {
     CORE_ASSERT( idx < m_data.size(), "Invalid vector index" );
     return m_data[idx];
 }
-
+/*
 template <typename T, uint D>
 const T& Grid<T, D>::at( const typename Grid<T, D>::Iterator& it ) const {
     CORE_ASSERT( it.getGridSize() == m_size, "Incompatible iterator" );
@@ -127,7 +127,7 @@ T& Grid<T, D>::at( const typename Grid<T, D>::Iterator& it ) {
     CORE_ASSERT( it.getGridSize() == m_size, "Incompatible iterator" );
     return at( it.getLinear() );
 }
-
+*/
 //
 // Iterators begin / end functions.
 //

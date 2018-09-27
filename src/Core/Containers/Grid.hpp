@@ -206,8 +206,8 @@ class Grid {
     inline T& at( uint idx );
 
     /// Access an element with an iterator.
-    inline const T& at( const Iterator& it ) const;
-    inline T& at( const Iterator& it );
+//    inline const T& at( const Iterator& it ) const;
+//    inline T& at( const Iterator& it );
 
     /// Read only access to the underlying data.
     inline const T* data() const;
