@@ -1,0 +1,9 @@
+<map id="Ra::Core::CatmullClarkSubdivider::prepare" name="Ra::Core::CatmullClarkSubdivider::prepare">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core.html#a23404744459a750d7bfe220788a5f604" title="Copy input properties of mesh. " alt="" coords="281,12,450,39"/>
+<area shape="rect" id="node4" href="$classRa_1_1Core_1_1TopologicalMesh.html#aa1016df75edb65e69fcdec5465e49245" title="Ra::Core::TopologicalMesh\l::getFloatPropsHandles" alt="" coords="275,63,456,105"/>
+<area shape="rect" id="node5" href="$classRa_1_1Core_1_1TopologicalMesh.html#acf1e58078add6e5cc9ce13b30fb3baf3" title="Ra::Core::TopologicalMesh\l::getVector2PropsHandles" alt="" coords="275,129,456,170"/>
+<area shape="rect" id="node6" href="$classRa_1_1Core_1_1TopologicalMesh.html#a6865aee84eb0d92f6acc12081bf8a6f8" title="Ra::Core::TopologicalMesh\l::getVector3PropsHandles" alt="" coords="275,194,456,235"/>
+<area shape="rect" id="node7" href="$classRa_1_1Core_1_1TopologicalMesh.html#a938483e7f6900eeb3914d662b9aac21c" title="Ra::Core::TopologicalMesh\l::getVector4PropsHandles" alt="" coords="275,259,456,301"/>
+<area shape="rect" id="node8" href="$namespaceRa_1_1Core.html#a07a9d67267d8b0d69da5d41141ee26f2" title="Add a copy of input properties of mesh on faces. " alt="" coords="277,325,454,352"/>
+<area shape="rect" id="node3" href="$classRa_1_1Core_1_1TopologicalMesh.html#abe2a6ac857a94f53fa1180c12ce034f8" title="Return the half&#45;edge associated with a given vertex and face. " alt="" coords="504,5,685,46"/>
+</map>

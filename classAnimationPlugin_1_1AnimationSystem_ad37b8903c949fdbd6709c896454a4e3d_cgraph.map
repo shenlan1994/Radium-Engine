@@ -1,0 +1,17 @@
+<map id="AnimationPlugin::AnimationSystem::handleAssetLoading" name="AnimationPlugin::AnimationSystem::handleAssetLoading">
+<area shape="rect" id="node2" href="$classRa_1_1Asset_1_1FileData.html#a067251ed4ac8d221a1bc373ea7a4b158" title="DATA. " alt="" coords="292,5,431,46"/>
+<area shape="rect" id="node4" href="$classRa_1_1Asset_1_1FileData.html#ac709c4000bd91796eea12d4899d93283" title="Ra::Asset::FileData\l::getHandleData" alt="" coords="292,70,431,111"/>
+<area shape="rect" id="node5" href="$classRa_1_1Asset_1_1FileData.html#a4ff19e44385ab0599eb85f9ae1df2784" title="Ra::Asset::FileData\l::getAnimationData" alt="" coords="292,135,431,177"/>
+<area shape="rect" id="node6" href="$classAnimationPlugin_1_1AnimationComponent.html#a6c2e655619c45bd330f1f067e5171073" title="Create the skeleton from the given data. " alt="" coords="246,201,477,242"/>
+<area shape="rect" id="node15" href="$classRa_1_1Engine_1_1BaseCouplingSystem.html#ac0e5715e8cdafcffc4812318d505c2f3" title="Registers a component belonging to an entity, making it active within the system. ..." alt="" coords="257,291,466,347"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core.html#af6bcd3f2b48d9770b18ec88249e607bc" title="LIST. " alt="" coords="563,51,663,77"/>
+<area shape="rect" id="node7" href="$classRa_1_1Asset_1_1AssetData.html#a8b107d2673623febe173f37f14ff777d" title="Ra::Asset::AssetData\l::getName" alt="" coords="538,102,689,143"/>
+<area shape="rect" id="node8" href="$classRa_1_1Core_1_1Animation_1_1Handle.html#ae8dab79a9d571d2a876ec9aaeb36959c" title="Set the Handle&#39;s name. " alt="" coords="543,167,684,209"/>
+<area shape="rect" id="node9" href="$namespaceRa_1_1Asset.html#a6af505cc4650dadb43465972bf52117d" title="Create a skeleton from a Handle Data extracted from a file Outputs the skeleton and a map from the co..." alt="" coords="525,233,701,260"/>
+<area shape="rect" id="node14" href="$classRa_1_1Core_1_1Animation_1_1Skeleton.html#acb6381c3f288f580800589eb718c1759" title="Ra::Core::Animation\l::Skeleton::getPose" alt="" coords="543,285,684,326"/>
+<area shape="rect" id="node10" href="$namespaceRa_1_1Core.html#abc0a3625137098b67838fe52edd480f9" title="SIZE. " alt="" coords="781,141,888,168"/>
+<area shape="rect" id="node11" href="$classRa_1_1Asset_1_1HandleData.html#aac2741c32466647b58b76e8310d90ecb" title="DATA. " alt="" coords="750,193,919,234"/>
+<area shape="rect" id="node12" href="$classRa_1_1Asset_1_1HandleData.html#adeb89ae26f34f0878a089ed7ecd64e24" title="Ra::Asset::HandleData\l::getComponentData" alt="" coords="755,258,914,299"/>
+<area shape="rect" id="node13" href="$classRa_1_1Asset_1_1HandleData.html#abc56131631200e94ff38cf9e2af920bc" title="Ra::Asset::HandleData\l::getEdgeData" alt="" coords="755,323,914,365"/>
+<area shape="rect" id="node16" href="$classRa_1_1Engine_1_1BaseCouplingSystem.html#a43a2a84e1f928d9a763b357553219567" title="Call a functor on subsystems. " alt="" coords="525,350,701,391"/>
+</map>

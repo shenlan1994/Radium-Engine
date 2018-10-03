@@ -1,0 +1,29 @@
+<map id="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/Core/File/HandleData.inl" name="/home/travis/build/STORM&#45;IRIT/Radium&#45;Engine/src/Core/File/HandleData.inl">
+<area shape="rect" id="node2" href="$HandleData_8hpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Core/File/HandleData.hpp" alt="" coords="2582,109,2780,165"/>
+<area shape="rect" id="node3" href="$FileData_8inl.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Core/File/FileData.inl" alt="" coords="1908,221,2105,277"/>
+<area shape="rect" id="node18" href="$SkinningSystem_8hpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Skinning/src/SkinningSystem.hpp" alt="" coords="3008,461,3277,517"/>
+<area shape="rect" id="node20" href="$HandleData_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Core/File/HandleData.cpp" alt="" coords="2341,221,2539,277"/>
+<area shape="rect" id="node21" href="$HandleToSkeleton_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Core/File/HandleToSkeleton.cpp" alt="" coords="2563,221,2799,277"/>
+<area shape="rect" id="node22" href="$AssimpHandleDataLoader_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/IO/AssimpLoader/AssimpHandle\lDataLoader.cpp" alt="" coords="2825,214,3063,285"/>
+<area shape="rect" id="node23" href="$AnimationComponent_8hpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Animation/src/Animation\lComponent.hpp" alt="" coords="3449,214,3663,285"/>
+<area shape="rect" id="node27" href="$SkinningComponent_8hpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Skinning/src/SkinningComponent.hpp" alt="" coords="3088,221,3379,277"/>
+<area shape="rect" id="node4" href="$FileData_8hpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Core/File/FileData.hpp" alt="" coords="1745,341,1943,397"/>
+<area shape="rect" id="node5" href="$FileData_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Core/File/FileData.cpp" alt="" coords="5,461,203,517"/>
+<area shape="rect" id="node6" href="$CameraManager_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Engine/Managers/CameraManager\l/CameraManager.cpp" alt="" coords="227,454,476,525"/>
+<area shape="rect" id="node7" href="$LightManager_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Engine/Managers/LightManager\l/LightManager.cpp" alt="" coords="501,454,731,525"/>
+<area shape="rect" id="node8" href="$RadiumEngine_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Engine/RadiumEngine.cpp" alt="" coords="756,461,959,517"/>
+<area shape="rect" id="node9" href="$Renderer_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/Engine/Renderer/Renderer.cpp" alt="" coords="983,461,1209,517"/>
+<area shape="rect" id="node10" href="$Viewer_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/GuiBase/Viewer/Viewer.cpp" alt="" coords="1233,461,1443,517"/>
+<area shape="rect" id="node11" href="$AssimpFileLoader_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/IO/AssimpLoader/AssimpFile\lLoader.cpp" alt="" coords="1468,454,1687,525"/>
+<area shape="rect" id="node12" href="$CameraLoader_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/IO/CameraLoader/CameraLoader.cpp" alt="" coords="1711,461,1976,517"/>
+<area shape="rect" id="node13" href="$TinyPlyFileLoader_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/src/IO/TinyPlyLoader/TinyPlyFile\lLoader.cpp" alt="" coords="2001,454,2220,525"/>
+<area shape="rect" id="node14" href="$AnimationSystem_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Animation/src/Animation\lSystem.cpp" alt="" coords="3302,454,3516,525"/>
+<area shape="rect" id="node15" href="$FancyMeshComponent_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/FancyMesh/src/FancyMesh\lComponent.cpp" alt="" coords="2244,454,2477,525"/>
+<area shape="rect" id="node16" href="$FancyMeshSystem_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/FancyMesh/src/FancyMesh\lSystem.cpp" alt="" coords="2503,454,2736,525"/>
+<area shape="rect" id="node17" href="$MeshPaintSystem_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/MeshPaint/src/MeshPaint\lSystem.cpp" alt="" coords="2761,454,2983,525"/>
+<area shape="rect" id="node19" href="$SkinningPlugin_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Skinning/src/SkinningPlugin.cpp" alt="" coords="3013,573,3272,629"/>
+<area shape="rect" id="node24" href="$AnimationComponent_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Animation/src/Animation\lComponent.cpp" alt="" coords="3771,454,3985,525"/>
+<area shape="rect" id="node25" href="$SkeletonBoneDrawable_8hpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Animation/src/Drawing\l/SkeletonBoneDrawable.hpp" alt="" coords="3499,334,3704,405"/>
+<area shape="rect" id="node26" href="$SkeletonBoneDrawable_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Animation/src/Drawing\l/SkeletonBoneDrawable.cpp" alt="" coords="3541,454,3747,525"/>
+<area shape="rect" id="node28" href="$SkinningComponent_8cpp.html" title="/home/travis/build\l/STORM&#45;IRIT/Radium&#45;Engine\l/Plugins/Skinning/src/SkinningComponent.cpp" alt="" coords="2905,341,3196,397"/>
+</map>

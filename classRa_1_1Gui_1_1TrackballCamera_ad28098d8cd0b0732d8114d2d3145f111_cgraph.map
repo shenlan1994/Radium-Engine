@@ -1,0 +1,7 @@
+<map id="Ra::Gui::TrackballCamera::handleCameraZoom" name="Ra::Gui::TrackballCamera::handleCameraZoom">
+<area shape="rect" id="node2" href="$namespaceRa_1_1Core_1_1Math.html#a43a856c00d750c5f5c28f362b5df8664" title="Returns value v clamped between bounds min and max. " alt="" coords="229,5,384,32"/>
+<area shape="rect" id="node3" href="$namespaceRa_1_1Core.html#ac89d3cec9f26a1c19c5d11de691d1327" title="FACE. " alt="" coords="261,56,352,83"/>
+<area shape="rect" id="node5" href="$namespaceOpenMesh.html#a8205f789ce08919bc11c58383574596c" title="OpenMesh::norm" alt="" coords="245,107,368,133"/>
+<area shape="rect" id="node6" href="$namespaceRa_1_1Core_1_1Algorithm.html#aea294cdb6f4f0d85955bdcccb22886ec" title="Ra::Core::Algorithm::t" alt="" coords="231,157,382,184"/>
+<area shape="rect" id="node4" href="$namespaceRa_1_1Core.html#a6dd9d23e2286b21c927c0cee124c6c1e" title="HALFEDGE. " alt="" coords="433,56,535,83"/>
+</map>
